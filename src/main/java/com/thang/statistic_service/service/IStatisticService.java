@@ -36,8 +36,8 @@ class StatisticServiceImpl implements IStatisticService {
     @Override
     public List<StatisticDTO> getAllStatistic() {
         List<StatisticDTO> statisticDTOList = new ArrayList<>();
-        statisticRepository.findAll().forEach(statisticDTO -> {
-            statisticDTOList.add(modelMapper.map(statisticDTO, StatisticDTO.class));
+        statisticRepository.findAll().forEach(statistic -> {
+            statisticDTOList.add(modelMapper.map(statistic, StatisticDTO.class));
         });
         return statisticDTOList;
     }
