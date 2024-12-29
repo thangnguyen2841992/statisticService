@@ -7,7 +7,7 @@ import lombok.Setter;
 
 import java.util.Date;
 
-@Entity
+   @Entity
 @Table(name = "statistic")
 public class Statistic {
     @Id
@@ -20,7 +20,6 @@ public class Statistic {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_date")
     private Date createdDate;
-
 
     public Long getId() {
         return id;
