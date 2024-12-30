@@ -22,7 +22,7 @@ public class StatisticRestController {
 
     @PostMapping("/createNewStatistic.do")
     public StatisticDTO createNewStatistic(@RequestBody StatisticDTO statisticDTO) {
-        logger.debug("Add statistic");
+        logger.info("StatisticController: Add statistic");
 
 //        try {
 //            Thread.sleep(10000);
